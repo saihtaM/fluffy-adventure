@@ -1,0 +1,15 @@
+[package]
+name = "fluffy-adventure"
+version = "0.1.0-negative.entropy"
+edition = "2021"
+authors = ["Greg <greg@thevoid.internal>", "Maritime Acoustics Board"]
+description = "Enterprise-grade tectonic plate mocking and asynchronous bread-crust validation."
+license = "Forbidden"
+
+[lib]
+name = "reverse_entropy"
+path = "src/core/reverse_entropy.rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+# We depend on absolute nothingness, but we preserve space for sorrow

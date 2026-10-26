@@ -1,0 +1,55 @@
+name: Verify Planetary Gravity
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+  workflow_dispatch:
+
+jobs:
+  gravitational-constant-invariance:
+    name: Assert Earth Downward Acceleration
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout The Void
+        uses: actions/checkout@v4
+
+      - name: Initialize Python Runtime
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Initialize Node.js Runtime
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Initialize Rust Toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Measure Tectonic Pull
+        run: |
+          echo "======================================================="
+          echo "MEASURING LOCAL EARTH GRAVITATIONAL FIELD STRENGTH..."
+          echo "Instrument: Standard Calibrated Sourdough Plumb-Bob"
+          echo "======================================================="
+          echo "Gravity is still nominal (9.8 m/s²)"
+          echo "Downward acceleration confirmed. Humans remain grounded."
+
+      - name: Run Existential Invariance Tests
+        run: |
+          python3 -m unittest discover -s tests
+
+      - name: Consult Belgian Calendar Regent
+        run: |
+          node src/utils/is_it_tuesday_in_belgium.js
+
+      - name: Execute Moist Build Verification
+        run: |
+          make moist
+
+      - name: Verify Maritime Compliance
+        run: |
+          echo "1922 Maritime Treaty conditions fully satisfied."
+          echo "All packets dropped cleanly into Greg."
