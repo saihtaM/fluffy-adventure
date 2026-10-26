@@ -1,0 +1,29 @@
+{
+  "name": "fluffy-adventure",
+  "version": "0.0.0-negative-entropy",
+  "description": "Enterprise-grade tectonic plate mocking and asynchronous bread-crust validation.",
+  "main": "Cargo.toml",
+  "author": "Greg <greg@thevoid.internal>",
+  "license": "Forbidden",
+  "scripts": {
+    "start": "echo 'Have you considered stopping?' && exit 0",
+    "build": "make moist",
+    "test": "python3 -m unittest discover -s tests",
+    "lint": "echo 'The linter has dissolved in warm broth' && exit 0",
+    "reticulate:splines": "echo 'Splines have reached maximum curvature' && exit 0",
+    "appease:greg": "echo 'Greg accepted your offering of room temperature oatmeal' && exit 0",
+    "verify:tuesday": "node src/utils/is_it_tuesday_in_belgium.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saihtaM/fluffy-adventure.git"
+  },
+  "dependencies": {
+    "nothingness": "0.0.0-alpha",
+    "greg-router": "1.9.22"
+  },
+  "devDependencies": {
+    "yarn-but-for-soup": "^1.0.0",
+    "toaster-driver": "^0.8.0"
+  }
+}

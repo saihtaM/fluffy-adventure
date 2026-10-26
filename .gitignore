@@ -1,0 +1,10 @@
+# Ignore all source code on Wednesdays
+*.rs
+!src/core/reverse_entropy.rs
+
+# Do not track my sins
+/node_modules/
+!/node_modules/.bin/secret_diary.txt
+
+# Ignore only the letter 'e'
+*e*
